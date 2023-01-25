@@ -1,0 +1,185 @@
+
+
+.sectionForm{
+    margin-top: 6.5rem;
+    margin-bottom: 4.5rem;
+    position: relative;
+}
+.divFormWrapper{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right:50px;
+    max-width: calc(1030px + 50px + 50px);
+    position: relative;
+    z-index: 2;
+}
+.headerForm{
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.textTitlePostCreate{
+    text-align: center;
+    font-size: 1.59375rem;
+    letter-spacing: 0.39px;
+    line-height: 1.3;
+    margin: 0 0 1.5rem;
+    color: #110E1D !important;
+    font-weight: 400;
+}
+
+
+@media (min-width: 768px){
+    .formContainerDisplay{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+    
+    }
+    
+}
+@media (min-width: 768px){
+    .inputContainerField{
+        grid-column: span 2;
+        margin-bottom: 2rem;
+    }
+}
+.inputText{
+     
+    height: 89px;
+    background: #F3F3F3;
+    width: 100%;
+    height: 80px;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F8F7F8;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #110E1D;
+    line-height: 20px;
+    padding: 0 2rem;
+    width: 100%;
+}
+.inputText:focus{
+    border-style: solid;
+    border-width: 0.7px;
+    border-color: pink !important;
+}
+.wrapInput{
+    max-height: 89px;
+    max-width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgContainer{
+    color: #26272a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainerWrapper{
+    margin-bottom: 20px;
+    position: relative;
+    background: #fff;
+    padding: 20px 20px;
+
+    border: 2px dashed #dadada !important;
+    color: #4b535e;
+    font-weight: 600;
+    margin-top: 1px;
+    min-height: 130px !important;
+    border-radius: 8px;
+   width: 75%;
+
+   display: flex;
+
+}
+.addMoreButton{
+    margin: 4px;
+    pointer-events: initial;
+
+    float: none;
+    display: inline-block;
+
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #dadada;
+    transition: .2s;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+.uploadedImagen{
+    margin: 4px 4px 4px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    cursor: move;
+    min-height: 100px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}  
+.imgRadius{
+    border-radius: 8px;
+}
+.completedContainer{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding-left: 90px;
+    
+
+}
+.completedWrapp{
+    padding-left: 20px;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}   
+.buttonPostContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonPost{
+    margin-bottom: 24px;
+    margin-top: 8px;
+    width: 100%;
+    padding: 0 120px;
+    max-width: 620px;
+}
+@media screen and (max-width: 920px){
+    .divFormWrapper{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .inputContainerField{
+        margin-bottom: 2rem;
+    }
+    .buttonPost{
+        padding: 0 60px;
+    }
+    .completedContainer{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 460px){
+    .completedContainer{
+        padding-left: 20px;
+    }
+    
+}

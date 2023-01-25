@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
+.itemPostContainer{
+    
+    padding: 0 20px;
+    display: grid;
+    grid-gap: 0.75rem;
+    margin: 100px auto 0 auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+   
+    grid-template-columns: repeat(4, minmax(7.5rem, 1fr));
+    
+}
+@media (max-width: 1279.98px){
+    .itemPostContainer{
+        grid-template-columns: repeat(4, minmax(7.5rem, 1fr));
+    }
+}
+@media (max-width: 1399.98px){
+.itemPostContainer{
+    grid-template-columns: repeat(4, minmax(10rem, 1fr));
+}
+}
+@media (max-width: 1123.98px){
+    
+    .itemPostContainer{
+        grid-template-columns: repeat(3, minmax(6.25rem, 1fr));
+    }
+}
+@media (max-width: 850.98px){
+    .itemPostContainer{
+        grid-template-columns: repeat(2, minmax(6.25rem, 1fr));
+    }
+}
+@media (max-width: 580.98px){
+    .itemPostContainer{
+        grid-template-columns: repeat(1, minmax(6.25rem, 1fr));
+        place-items: center;
+    }
+}
+.itemCard{
+    /* padding: 40px 32px; */
+    border: 1px solid hsla(0,0%,100%,.05);
+    box-shadow: 4px 4px 40px 0 rgb(78 77 82 / 12%);
+    background-color: rgba(255,255,255,.05);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+}
+/* .cardImage{
+    max-height: 330px;
+    object-fit: cover;
+} */
+.cardTitle{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #6944ff;
+}
+.cardList {
+    margin: 100px auto 0 auto;
+	display: block;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+.card {
+	display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+    cursor: pointer;
+    /* border: 1px solid hsla(0,0%,100%,.05); */
+    box-shadow: 4px 4px 40px 0 rgb(78 77 82 / 12%);
+    background-color: rgba(255,255,255,.05);
+    max-height: 380px;
+}
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.cardImage {
+	display: block;
+	min-height: 20rem; /* layout hack */
+	background: #fff center center no-repeat;
+	background-size: cover;
+	/* blur the lowres image */
+    display: block;
+	width: 100%;
+    object-fit: cover;
+    max-height: 320px;
+	
+}
+.titleContent{
+    display: block;
+	padding: 1em 0.5em;
+	color: #515151;
+	text-decoration: none;
+}
+.cardTitleInfo{
+    margin: 0 0 0.5em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #6944ff;
+}
